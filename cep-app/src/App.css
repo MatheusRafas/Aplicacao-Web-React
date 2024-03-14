@@ -1,7 +1,27 @@
-body {
+html, body, #root, div {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 10px;
+  background-color: antiquewhite;
   display: flex;
   justify-content: center;
+  height: 100%;
+  margin: 0;
 }
+.cabeca {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 6px;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
 
 form {
   display: flex;

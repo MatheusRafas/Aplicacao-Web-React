@@ -24,36 +24,48 @@ function App() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <label>
-        CEP:
-        <input type="text" {...register("cep")} onBlur={checkCEP}/>
-      </label>
-      <label>
-        Rua:
-        <input type="text" {...register("address")} />
-      </label>
-      <label>
-        Número:
-        <input type="text" {...register("addressNumber")} />
-      </label>
-      <label>
-        Bairro:
-        <input type="text" {...register("neighborhood")} />
-      </label>
-      <label>
-        Cidade:
-        <input type="text" {...register("city")} />
-      </label>
-      <label>
-        Estado:
-        <input type="text" {...register("uf")} />
-      </label>
-      <label>
-        <button type="submit">Enviar</button>
-      </label>
-    </form>
+    <div>
+      <header class='cabeca'>
+        <h1>Formulário de Endereço</h1>
+        <p>Informe seu CEP, para que o mesmo se autopreencha</p>
+      </header>
+      <section>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <label>
+            CEP:
+            <input type="text" {...register("cep")} onBlur={checkCEP}/>
+          </label>
+          <label>
+            Rua:
+            <input type="text" {...register("address")} />
+          </label>
+          <label>
+            Número:
+            <input type="text" {...register("addressNumber")} />
+          </label>
+          <label>
+            Bairro:
+            <input type="text" {...register("neighborhood")} />
+          </label>
+          <label>
+            Cidade:
+            <input type="text" {...register("city")} />
+          </label>
+          <label>
+            Estado:
+            <input type="text" {...register("uf")} />
+          </label>
+          <label>
+            <button type="submit">Enviar</button>
+          </label>
+        </form>
+      </section>
+    </div>
   );
 }
 
+
+
+
 export default App;
+
